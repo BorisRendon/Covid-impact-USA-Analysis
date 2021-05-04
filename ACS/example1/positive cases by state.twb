@@ -1,0 +1,505 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20204.21.0315.1000                               -->
+<workbook original-version='18.1' source-build='2020.4.3 (20204.21.0315.1000)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='COVID-19 Activity' inline='true' name='federated.193ll1x1at4zuf19lednj02eucte' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='COVID-19 Activity' name='textscan.1a5xmhr15o43n61fwu7y20p3ivoy'>
+            <connection class='textscan' directory='C:/Users/Lindsey/Desktop/Covid-impact-USA-Analysis/C19D' filename='COVID-19 Activity.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1a5xmhr15o43n61fwu7y20p3ivoy' name='COVID-19 Activity.csv' table='[COVID-19 Activity#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='PEOPLE_POSITIVE_CASES_COUNT' ordinal='0' />
+            <column datatype='string' name='COUNTY_NAME' ordinal='1' />
+            <column datatype='string' name='PROVINCE_STATE_NAME' ordinal='2' />
+            <column datatype='date' name='REPORT_DATE' ordinal='3' />
+            <column datatype='string' name='CONTINENT_NAME' ordinal='4' />
+            <column datatype='string' name='DATA_SOURCE_NAME' ordinal='5' />
+            <column datatype='integer' name='PEOPLE_DEATH_NEW_COUNT' ordinal='6' />
+            <column datatype='integer' name='COUNTY_FIPS_NUMBER' ordinal='7' />
+            <column datatype='string' name='COUNTRY_ALPHA_3_CODE' ordinal='8' />
+            <column datatype='string' name='COUNTRY_SHORT_NAME' ordinal='9' />
+            <column datatype='string' name='COUNTRY_ALPHA_2_CODE' ordinal='10' />
+            <column datatype='integer' name='PEOPLE_POSITIVE_NEW_CASES_COUNT' ordinal='11' />
+            <column datatype='integer' name='PEOPLE_DEATH_COUNT' ordinal='12' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1a5xmhr15o43n61fwu7y20p3ivoy' name='COVID-19 Activity.csv' table='[COVID-19 Activity#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='PEOPLE_POSITIVE_CASES_COUNT' ordinal='0' />
+            <column datatype='string' name='COUNTY_NAME' ordinal='1' />
+            <column datatype='string' name='PROVINCE_STATE_NAME' ordinal='2' />
+            <column datatype='date' name='REPORT_DATE' ordinal='3' />
+            <column datatype='string' name='CONTINENT_NAME' ordinal='4' />
+            <column datatype='string' name='DATA_SOURCE_NAME' ordinal='5' />
+            <column datatype='integer' name='PEOPLE_DEATH_NEW_COUNT' ordinal='6' />
+            <column datatype='integer' name='COUNTY_FIPS_NUMBER' ordinal='7' />
+            <column datatype='string' name='COUNTRY_ALPHA_3_CODE' ordinal='8' />
+            <column datatype='string' name='COUNTRY_SHORT_NAME' ordinal='9' />
+            <column datatype='string' name='COUNTRY_ALPHA_2_CODE' ordinal='10' />
+            <column datatype='integer' name='PEOPLE_POSITIVE_NEW_CASES_COUNT' ordinal='11' />
+            <column datatype='integer' name='PEOPLE_DEATH_COUNT' ordinal='12' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[COVID-19 Activity.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PEOPLE_POSITIVE_CASES_COUNT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PEOPLE_POSITIVE_CASES_COUNT]</local-name>
+            <parent-name>[COVID-19 Activity.csv]</parent-name>
+            <remote-alias>PEOPLE_POSITIVE_CASES_COUNT</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19 Activity.csv_A4898CCD98CE403BB5C53A1F2321886C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTY_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[COUNTY_NAME]</local-name>
+            <parent-name>[COVID-19 Activity.csv]</parent-name>
+            <remote-alias>COUNTY_NAME</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19 Activity.csv_A4898CCD98CE403BB5C53A1F2321886C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PROVINCE_STATE_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PROVINCE_STATE_NAME]</local-name>
+            <parent-name>[COVID-19 Activity.csv]</parent-name>
+            <remote-alias>PROVINCE_STATE_NAME</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19 Activity.csv_A4898CCD98CE403BB5C53A1F2321886C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>REPORT_DATE</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[REPORT_DATE]</local-name>
+            <parent-name>[COVID-19 Activity.csv]</parent-name>
+            <remote-alias>REPORT_DATE</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19 Activity.csv_A4898CCD98CE403BB5C53A1F2321886C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CONTINENT_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CONTINENT_NAME]</local-name>
+            <parent-name>[COVID-19 Activity.csv]</parent-name>
+            <remote-alias>CONTINENT_NAME</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19 Activity.csv_A4898CCD98CE403BB5C53A1F2321886C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DATA_SOURCE_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DATA_SOURCE_NAME]</local-name>
+            <parent-name>[COVID-19 Activity.csv]</parent-name>
+            <remote-alias>DATA_SOURCE_NAME</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19 Activity.csv_A4898CCD98CE403BB5C53A1F2321886C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PEOPLE_DEATH_NEW_COUNT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PEOPLE_DEATH_NEW_COUNT]</local-name>
+            <parent-name>[COVID-19 Activity.csv]</parent-name>
+            <remote-alias>PEOPLE_DEATH_NEW_COUNT</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19 Activity.csv_A4898CCD98CE403BB5C53A1F2321886C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTY_FIPS_NUMBER</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[COUNTY_FIPS_NUMBER]</local-name>
+            <parent-name>[COVID-19 Activity.csv]</parent-name>
+            <remote-alias>COUNTY_FIPS_NUMBER</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19 Activity.csv_A4898CCD98CE403BB5C53A1F2321886C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTRY_ALPHA_3_CODE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[COUNTRY_ALPHA_3_CODE]</local-name>
+            <parent-name>[COVID-19 Activity.csv]</parent-name>
+            <remote-alias>COUNTRY_ALPHA_3_CODE</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19 Activity.csv_A4898CCD98CE403BB5C53A1F2321886C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTRY_SHORT_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[COUNTRY_SHORT_NAME]</local-name>
+            <parent-name>[COVID-19 Activity.csv]</parent-name>
+            <remote-alias>COUNTRY_SHORT_NAME</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19 Activity.csv_A4898CCD98CE403BB5C53A1F2321886C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTRY_ALPHA_2_CODE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[COUNTRY_ALPHA_2_CODE]</local-name>
+            <parent-name>[COVID-19 Activity.csv]</parent-name>
+            <remote-alias>COUNTRY_ALPHA_2_CODE</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19 Activity.csv_A4898CCD98CE403BB5C53A1F2321886C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PEOPLE_POSITIVE_NEW_CASES_COUNT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PEOPLE_POSITIVE_NEW_CASES_COUNT]</local-name>
+            <parent-name>[COVID-19 Activity.csv]</parent-name>
+            <remote-alias>PEOPLE_POSITIVE_NEW_CASES_COUNT</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19 Activity.csv_A4898CCD98CE403BB5C53A1F2321886C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PEOPLE_DEATH_COUNT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PEOPLE_DEATH_COUNT]</local-name>
+            <parent-name>[COVID-19 Activity.csv]</parent-name>
+            <remote-alias>PEOPLE_DEATH_COUNT</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[COVID-19 Activity.csv_A4898CCD98CE403BB5C53A1F2321886C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Continent Name' datatype='string' name='[CONTINENT_NAME]' role='dimension' type='nominal' />
+      <column caption='Country Alpha 2 Code' datatype='string' name='[COUNTRY_ALPHA_2_CODE]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Country Alpha 3 Code' datatype='string' name='[COUNTRY_ALPHA_3_CODE]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Country Short Name' datatype='string' name='[COUNTRY_SHORT_NAME]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='County Fips Number' datatype='integer' name='[COUNTY_FIPS_NUMBER]' role='dimension' type='ordinal' />
+      <column caption='County Name' datatype='string' name='[COUNTY_NAME]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='Data Source Name' datatype='string' name='[DATA_SOURCE_NAME]' role='dimension' type='nominal' />
+      <column caption='People Death Count' datatype='integer' name='[PEOPLE_DEATH_COUNT]' role='measure' type='quantitative' />
+      <column caption='People Death New Count' datatype='integer' name='[PEOPLE_DEATH_NEW_COUNT]' role='measure' type='quantitative' />
+      <column caption='People Positive Cases Count' datatype='integer' name='[PEOPLE_POSITIVE_CASES_COUNT]' role='measure' type='quantitative' />
+      <column caption='People Positive New Cases Count' datatype='integer' name='[PEOPLE_POSITIVE_NEW_CASES_COUNT]' role='measure' type='quantitative' />
+      <column caption='Province State Name' datatype='string' name='[PROVINCE_STATE_NAME]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Report Date' datatype='date' name='[REPORT_DATE]' role='dimension' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='COVID-19 Activity.csv' datatype='table' name='[__tableau_internal_object_id__].[COVID-19 Activity.csv_A4898CCD98CE403BB5C53A1F2321886C]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Guatemala&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='COVID-19 Activity.csv' id='COVID-19 Activity.csv_A4898CCD98CE403BB5C53A1F2321886C'>
+            <properties context=''>
+              <relation connection='textscan.1a5xmhr15o43n61fwu7y20p3ivoy' name='COVID-19 Activity.csv' table='[COVID-19 Activity#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='PEOPLE_POSITIVE_CASES_COUNT' ordinal='0' />
+                  <column datatype='string' name='COUNTY_NAME' ordinal='1' />
+                  <column datatype='string' name='PROVINCE_STATE_NAME' ordinal='2' />
+                  <column datatype='date' name='REPORT_DATE' ordinal='3' />
+                  <column datatype='string' name='CONTINENT_NAME' ordinal='4' />
+                  <column datatype='string' name='DATA_SOURCE_NAME' ordinal='5' />
+                  <column datatype='integer' name='PEOPLE_DEATH_NEW_COUNT' ordinal='6' />
+                  <column datatype='integer' name='COUNTY_FIPS_NUMBER' ordinal='7' />
+                  <column datatype='string' name='COUNTRY_ALPHA_3_CODE' ordinal='8' />
+                  <column datatype='string' name='COUNTRY_SHORT_NAME' ordinal='9' />
+                  <column datatype='string' name='COUNTRY_ALPHA_2_CODE' ordinal='10' />
+                  <column datatype='integer' name='PEOPLE_POSITIVE_NEW_CASES_COUNT' ordinal='11' />
+                  <column datatype='integer' name='PEOPLE_DEATH_COUNT' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#d17825' fontname='Gadugi'>Top 3 most positive cases</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='COVID-19 Activity' name='federated.193ll1x1at4zuf19lednj02eucte' />
+          </datasources>
+          <datasource-dependencies datasource='federated.193ll1x1at4zuf19lednj02eucte'>
+            <column caption='People Positive Cases Count' datatype='integer' name='[PEOPLE_POSITIVE_CASES_COUNT]' role='measure' type='quantitative' />
+            <column caption='Province State Name' datatype='string' name='[PROVINCE_STATE_NAME]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[PROVINCE_STATE_NAME]' derivation='None' name='[none:PROVINCE_STATE_NAME:nk]' pivot='key' type='nominal' />
+            <column-instance column='[PEOPLE_POSITIVE_CASES_COUNT]' derivation='Sum' name='[sum:PEOPLE_POSITIVE_CASES_COUNT:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.193ll1x1at4zuf19lednj02eucte].[none:PROVINCE_STATE_NAME:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:PROVINCE_STATE_NAME:nk]' member='&quot;Alaska&quot;' />
+              <groupfilter function='member' level='[none:PROVINCE_STATE_NAME:nk]' member='&quot;Florida&quot;' />
+              <groupfilter function='member' level='[none:PROVINCE_STATE_NAME:nk]' member='&quot;Kentucky&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.193ll1x1at4zuf19lednj02eucte].[none:PROVINCE_STATE_NAME:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='width' field='[federated.193ll1x1at4zuf19lednj02eucte].[sum:PEOPLE_POSITIVE_CASES_COUNT:qk]' value='100' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.193ll1x1at4zuf19lednj02eucte].[none:PROVINCE_STATE_NAME:nk]' value='96' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#d3b348' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.193ll1x1at4zuf19lednj02eucte].[sum:PEOPLE_POSITIVE_CASES_COUNT:qk]</rows>
+        <cols>[federated.193ll1x1at4zuf19lednj02eucte].[none:PROVINCE_STATE_NAME:nk]</cols>
+      </table>
+      <simple-id uuid='{B3149206-D7B6-4FFB-92B3-ECB580433264}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='32'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.193ll1x1at4zuf19lednj02eucte].[none:PROVINCE_STATE_NAME:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{39CDF41E-DC4E-4F59-8FDC-E4615FB06DBF}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      v5qmQWZigoymY7M78bidKJikkkl0xY7P40IBtGyaVFrD7fXisClkMxp2pwM9k8ZQHThUk6xu
+      4nS8leO52AN0HPryjJkjrP6Wp/JdxlWjKIqSn5NgRcXl8fLOzlTB4/O/Y43d6SbgfGvZ4XRc
+      Xv/WK51zZzsXeSCbj7A0CYCwNAmAsDQJgLA0CYCwNAmAsDQJgLA0CYCwNAmAsDQJgLA0CYCw
+      NAmAsDQJgLA0CYCwNAmAsDQJgLA0CYCwNAmAsDQJgLA0CYCwNAmAsDQJgLA0CYCwNAmAsDQJ
+      gLA0CYCwNAmAsDQJgLA0CYCwNAmAsDQJgLA0CYCwNAmAsDQJgLA0CYCwNAmAsDQJgLA0CYCw
+      tLzNFJ+KjdAdGsAZKKWuugw9OcrF7n4ME4LzaqgtKyAeuUTPYIyahYso8NgY6g1BoIx5BR7A
+      ZHSgm4StmJp5wXw1Q8xy+ekBJsY509SOzeVhqPUUbeEYly40MY4Dv9+Px+nAmBji4JEm3A6d
+      Q68eJWNqtJ48zYmWNkzA1BKcOnSYxrZQXpog5ob89ADOABs3bcKmmlwc6yWjm4THx8hknMRs
+      pVTVehlrPU7F2u0srnGgD++lPw6uYCk2bZzRjIlzdAhHaQU+h5KXJoi5IT8BUFWUbIJTR4+T
+      8tawsSJANrCF8USaxEg3rxyKs85vEKh0gQJ+v51YBlDsVFX76esdIZAaZF5ZBaGYCYCmaZim
+      iWEY6Lqel2ZNF9M0810CMFlHOp3OdxlXVX4CYGQ4fawBX91q1lSXYFMUbP5CvEEVKku58Ju9
+      +CoDdI/EocDL6KhOwWKIAUWllXSfaSOpuFhR7yEUS042xD7ZFE3TUFUVVZ075/eKMjN6OUVR
+      cLlc+S7jqspLANKRXppCYeYbNsJdsHDlRsYuHmIoZUdPjlO0cD2BugKiu/ZyMBRkQilhhQcG
+      ALuvCG90kGjNOtwzY7sQs5hi5qF/NfQsiUQC3Zhc9viCOFSdRCKJqdjx+72oQDYzQXIii9fv
+      x2FTyKSzOFxOtPQEps2BQzXJaCYup+PN956LPUDHoS+TjJzLdxm4/LXU3/JUvsu4ahRFUfLS
+      A6g2B4Fg4e+vJRAseMcah8tDgcvz5rLT5by83v3musurhLgic2c3KcQVkAAIS5MACEuTAAhL
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
